@@ -1,0 +1,29 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+/* make sticky footer  -- start */
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: $mon;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+}
+/* make sticky footer  -- end */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
