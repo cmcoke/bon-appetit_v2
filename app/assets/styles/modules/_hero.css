@@ -1,0 +1,114 @@
+.hero{
+  position: relative;
+
+  @media screen and (max-width: 768px){
+    margin-top: -40px;
+  }
+
+  @media screen and (min-width: 769px){
+    margin-top: -10px;
+  }
+
+  &__logo{
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 0px;
+
+    @media screen and (min-width: 769px){
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+  }
+
+  &__logo--hide-large{
+
+    @media screen and (max-width: 768px){
+      display: none;
+    }
+  }
+
+  &__logo--hide-small{
+
+    @media screen and (min-width: 769px){
+      display: none;
+    }
+  }
+
+  &__text-content{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__small-title{
+    font-family: $script;
+    color: #ffffff;
+    font-size: responsive 30px 90px;
+    margin: 0;
+  }
+
+  &__large-title{
+    text-transform: uppercase;
+    color: $yellow;
+    font-size: responsive 40px 150px;
+    margin:0;
+
+    @media screen and (min-width: 640px ){
+      margin-top: -2px;
+    }
+
+    @media screen and (min-width: 1000px ){
+      margin-top: -15px;
+    }
+
+    @media screen and (min-width: 1383px ){
+      margin-top: -20px;
+    }
+
+  }
+
+  &__container{
+    padding: 0 11px;
+
+    @media screen and (min-width: 768px ){
+      padding: 0 40px;
+    }
+  }
+
+  &__container--info{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.5;
+
+    @media screen and (min-width: 950px ){
+      flex-direction: row;
+      text-align: left;
+      justify-content: space-between;
+    }
+  }
+
+  &__time-and-number{
+
+    @media screen and (min-width: 950px ){
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+    }
+
+  }
+
+  &__number{
+
+    @media screen and (max-width: 949px ){
+      margin-top: -14px;
+    }
+
+  }
+
+}

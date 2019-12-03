@@ -5,7 +5,8 @@ const postCSSPlugins = [
   require('postcss-simple-vars'),
   require('postcss-nested'),
   require('autoprefixer'),
-  require('postcss-pxtorem')
+  require('postcss-pxtorem'),
+  require('rucksack-css')
 ]
 
 module.exports = {

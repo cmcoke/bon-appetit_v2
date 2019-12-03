@@ -15,7 +15,7 @@
   <div class="content">
 
     <!-- HEADER -->
-    <header>
+    <!-- <header>
 
       <nav>
         <ul>
@@ -27,42 +27,54 @@
         </ul>
       </nav>
 
-    </header>
+    </header> -->
 
 
     <!-- SOCIAL MEDIA LINKS -->
-    <section>
+    <!-- <section>
       <ul>
         <li><a href="#"><img src="assets/images/icons/facebook.png" alt="facebook logo"></a></li>
         <li><a href="#"><img src="assets/images/icons/instagram.png" alt="instagram logo"></a></li>
         <li><a href="#"><img src="assets/images/icons/twitter.png" alt="twitter logo"></a></li>
         <li><a href="#"><img src="assets/images/icons/yelp.png" alt="yelp logo"></a></li>
       </ul>
+    </section> -->
+
+    <!-- LOGO -->
+    <section class="hero__logo">
+      <img src="assets/images/icons/logo--large.png" alt="Bon Appétit logo" class="hero__logo--hide-large">
+      <img src="assets/images/icons/logo--small.png" alt="Bon Appétit logo" class="hero__logo--hide-small">
     </section>
 
-
     <!-- HERO -->
-    <section id="home">
+    <section class="hero" id="home">
 
-      <div class="">
-        <img src="assets/images/icons/logo--large.png" alt="Bon Appétit logo">
+      <div class="hero__container">
+        <picture>
+          <source sizes="" srcset="assets/images/hero--large.jpg 1920w, assets/images/hero--large-hi-dpi.jpg 3840w"  media="(min-width: 1380px)">
+          <source sizes="1380px" srcset="assets/images/hero--medium.jpg 1380w, assets/images/hero--medium-hi-dpi.jpg 2760w" media="(min-width: 990px)">
+          <source sizes="990px" srcset="assets/images/hero--small.jpg 990w, assets/images/hero--small-hi-dpi.jpg 1980w" media="(min-width: 640px)">
+          <img srcset="assets/images/hero--smaller.jpg 640w, assets/images/hero--smaller-hi-dpi.jpg 1280w" alt="Customer's sitting outside restaurant">
+        </picture>
       </div>
 
-      <img src="assets/images/hero--large.jpg" alt="Customer's sitting outside restaurant">
 
-      <div class="">
-        <h3 class="">welcome to</h3>
-        <h1 class="">Bon Appétit</h1>
-      </div>
-
-      <div class="">
-        <p>325 Bowery, Joey Ramone Place, New York, NY 10003</p>
-        <div class="">
-          <p>Open daily: Noon - 11:00 PM</p>
-          <p>(212) 837-5089</p>
+      <div class="hero__text-content">
+        <div class="wrapper">
+          <h3 class="hero__small-title">welcome to</h3>
+          <h1 class="hero__large-title">Bon Appétit</h1>
         </div>
       </div>
 
+    </section>
+
+    <!-- ADDRESS, OPEN HOURS & RESERVATION NUMBER -->
+    <section class="hero__container hero__container--info">
+      <p class="">325 Bowery, Joey Ramone Place, New York, NY 10003</p>
+      <div class="hero__time-and-number">
+        <p>Open Daily: Noon - 11:00PM &nbsp;</p>
+        <p class="hero__number">(212) 837-1234</p>
+      </div>
     </section>
 
 
