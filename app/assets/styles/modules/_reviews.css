@@ -1,0 +1,32 @@
+.reviews{
+
+  @media screen and (min-width: 945px){
+    margin: 80px 0;
+  }
+
+  &__container{
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 945px){
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &__statements{
+
+    @media screen and (min-width: 945px){
+      width: 95%;
+      margin-left: 20px;
+    }
+
+  }
+
+  & q{
+    line-height: 1.6;
+    font-size: responsive 16px 30px;
+    color: #2F2C2A;
+  }
+
+}

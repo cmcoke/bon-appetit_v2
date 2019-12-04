@@ -1,5 +1,22 @@
 .food-img{
 
+  @media screen and (min-width:681px){
+    margin: 80px 0;
+  }
+
+  @media screen and (min-width:950px){
+    margin: 100px 0;
+  }
+
+  @media screen and (min-width:1026px){
+    /* margin: 200px 0 120px; */
+    margin: 160px 0 80px;
+  }
+
+  @media screen and (min-width:1388px){
+    margin: 210px 0 120px;
+  }
+
   &__container{
     width: 1100px;
     margin: 0 auto;

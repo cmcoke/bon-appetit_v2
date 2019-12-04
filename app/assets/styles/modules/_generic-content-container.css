@@ -1,4 +1,9 @@
 .generic-content-container{
+  /* margin: 30px 0; */
+
+  @media screen and (min-width: 945px){
+    margin: 110px 0 80px;
+  }
 
   p{
     font-size: responsive 16px 30px;
@@ -24,7 +29,7 @@
     }
 
     @media screen and (min-width: 1388px){
-      line-height:1.7;
+      line-height:1.6;
       width: 1200px;
     }
 

@@ -6,5 +6,7 @@
 @import "modules/_hero";
 @import "modules/_page-section";
 @import "modules/_generic-content-container";
+@import "modules/_heading";
 @import "modules/_food-img";
 @import "modules/_menu";
+@import "modules/_reviews";
