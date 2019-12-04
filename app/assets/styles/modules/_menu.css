@@ -1,0 +1,68 @@
+.menu{
+
+  & h2{
+    text-align: center;
+    font-size: responsive 40px 60px;
+    padding-bottom: 50px;
+    font-weight: 400;
+  }
+
+  &__container{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    margin-top: -60px;
+
+
+    @media screen and (min-width: 945px){
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: -40px;
+    }
+  }
+
+  &__type{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+  }
+
+  &__item{
+    margin: 0 0 55px;
+  }
+
+  & h5{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: #2F2C2A;
+  }
+
+  &__description{
+    width: 300px;
+    margin: -12px auto 14px;
+    line-height: 1.7;
+    text-align: center;
+    color: #6D6966;
+  }
+
+  &__price{
+    text-align: center;
+    color: #2F2C2A;
+  }
+
+  &__divider{
+    border-bottom-width: 2px;
+    border-bottom-style: dotted;
+    border-bottom-color: #D5D2D1;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+    @media screen and (min-width: 934px){
+      margin-top: 50px;
+    }
+  }
+
+}
