@@ -1,0 +1,32 @@
+.generic-content-container{
+
+  p{
+    font-size: responsive 16px 30px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.9;
+    margin: 15px auto;
+
+
+    @media screen and (min-width: 714px){
+      width: 650px;
+    }
+
+    @media screen and (min-width: 802px){
+      line-height:2;
+      width: 750px;
+    }
+
+    @media screen and (min-width: 1000px){
+      line-height:2;
+      width: 900px;
+    }
+
+    @media screen and (min-width: 1388px){
+      line-height:1.7;
+      width: 1200px;
+    }
+
+  }
+
+}
