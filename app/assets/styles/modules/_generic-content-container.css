@@ -1,8 +1,12 @@
 .generic-content-container{
-  /* margin: 30px 0; */
+  margin: 16px 0 30px;
 
   @media screen and (min-width: 945px){
     margin: 110px 0 80px;
+  }
+
+  &--about{
+    /* margin: 33px 0 50px; */
   }
 
   p{
@@ -33,6 +37,27 @@
       width: 1200px;
     }
 
+  }
+
+  &--reservation{
+    margin: 0 0 40px 0;
+
+    font-size: responsive 16px 18px;
+
+    font-weight: 400;
+    /* line-height: 1.6; */
+    line-height: 1.9;
+    color: #2F2C2A;
+    text-align: center;
+
+    @media screen and (min-width: 678px){
+      /* text-align: center; */
+    }
+
+    @media screen and (min-width: 945px){
+      margin: 0 auto 70px auto;
+      width: 80%;
+    }
   }
 
 }

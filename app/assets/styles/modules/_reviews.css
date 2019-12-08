@@ -1,4 +1,5 @@
 .reviews{
+  margin: 0 0 30px 0;
 
   @media screen and (min-width: 945px){
     margin: 80px 0;
@@ -15,6 +16,7 @@
   }
 
   &__statements{
+    /* padding: 0 15px; */
 
     @media screen and (min-width: 945px){
       width: 95%;
@@ -24,9 +26,14 @@
   }
 
   & q{
-    line-height: 1.6;
-    font-size: responsive 16px 30px;
+    /* line-height: 1.5; */
+    line-height: 1.9;
+    font-size: responsive 16px 35px;
     color: #2F2C2A;
+  }
+
+  &__quotes p{
+    margin-top: 10px;
   }
 
 }

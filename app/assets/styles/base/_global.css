@@ -9,7 +9,7 @@ html, body {
 
 body {
   font-family: $mon;
-  background-color: $white;
+  /* background-color: $white; */
   display: flex;
   flex-direction: column;
 }
@@ -26,4 +26,24 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+ul{
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+}
+
+/* For IE10 */
+select::-ms-expand {
+  display: none;
 }
