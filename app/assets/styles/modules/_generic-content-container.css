@@ -1,63 +1,76 @@
 .generic-content-container{
-  margin: 16px 0 30px;
-
-  @media screen and (min-width: 945px){
-    margin: 110px 0 80px;
-  }
+  font-size: responsive 16px 30px;
+  text-align: center;
+  line-height: 1.8;
+  font-weight: 400;
+  color: $textBlack;
+  margin-left: auto;
+  margin-right: auto;
 
   &--about{
-    /* margin: 33px 0 50px; */
-  }
+    margin-top: 20px;
+    margin-bottom: 35px;
 
-  p{
-    font-size: responsive 16px 30px;
-    text-align: center;
-    font-weight: 400;
-    line-height: 1.9;
-    margin: 15px auto;
-    color: #2F2C2A;
-
-
-    @media screen and (min-width: 714px){
-      width: 650px;
+    @media screen and (min-width: 554px){
+      width: 500px;
     }
 
-    @media screen and (min-width: 802px){
-      line-height:2;
-      width: 750px;
+    @media screen and (min-width: 600px){
+      margin-top: 30px;
+      margin-bottom: 60px;
     }
 
-    @media screen and (min-width: 1000px){
-      line-height:2;
+    @media screen and (min-width: 681px){
+      width: 600px;
+      margin-bottom: 55px;
+    }
+
+    @media screen and (min-width: 769px){
+      width: 700px;
+      margin-bottom: 75px;
+    }
+
+    @media screen and (min-width: 950px){
+      width: 700px;
+      margin-top: 55px;
+      margin-bottom: 75px;
+    }
+
+    @media screen and (min-width: 1026px){
+      width: 800px;
+      margin-top: 70px;
+      margin-bottom: 45px;
+    }
+
+    @media screen and (min-width: 1082px){
+      width: 800px;
+    }
+
+    @media screen and (min-width: 1201px){
       width: 900px;
+      margin-bottom: 55px;
+    }
+
+    @media screen and (min-width: 1367px){
+      width: 1000px;
+      margin-bottom: 75px;
     }
 
     @media screen and (min-width: 1388px){
-      line-height:1.6;
       width: 1200px;
+      margin-bottom: 35px;
     }
 
   }
 
   &--reservation{
-    margin: 0 0 40px 0;
-
     font-size: responsive 16px 18px;
 
-    font-weight: 400;
-    /* line-height: 1.6; */
-    line-height: 1.9;
-    color: #2F2C2A;
-    text-align: center;
-
-    @media screen and (min-width: 678px){
-      /* text-align: center; */
-    }
-
     @media screen and (min-width: 945px){
-      margin: 0 auto 70px auto;
+      margin: 0 auto 35px auto;
       width: 80%;
     }
+
   }
 
 }

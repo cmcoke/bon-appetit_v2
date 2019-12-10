@@ -23,35 +23,36 @@
   <div class="content">
 
     <!-- HEADER -->
-    <!-- <header>
+    <header class="header">
 
-      <nav>
-        <ul>
-          <li><a href="#home" id="home-link">Home</a></li>
-          <li><a href="#about" id="about-link">About</a></li>
-          <li><a href="#menu" id="menu-link">Menu</a></li>
-          <li><a href="#reviews" id="reviews-link">Reviews</a></li>
-          <li><a href="#reservation" id="reservation-link">Reservation</a></li>
-        </ul>
-      </nav>
+      <div class="header__menu-icon">
+        <div class="header__menu-icon__middle"></div>
+      </div>
 
-    </header> -->
+      <div class="header__menu-content">
+        <nav>
+          <ul>
+            <li><a href="#home" id="home-link">Home</a></li>
+            <li><a href="#about" id="about-link">About</a></li>
+            <li><a href="#menu" id="menu-link">Menu</a></li>
+            <li><a href="#reviews" id="reviews-link">Reviews</a></li>
+            <li><a href="#reservation" id="reservation-link">Reservation</a></li>
+          </ul>
+        </nav>
+      </div>
+
+
+    </header>
 
 
     <!-- SOCIAL MEDIA LINKS -->
-    <!-- <section>
+    <section class="social-media">
       <ul>
         <li><a href="#"><img src="assets/images/icons/facebook.png" alt="facebook logo"></a></li>
         <li><a href="#"><img src="assets/images/icons/instagram.png" alt="instagram logo"></a></li>
         <li><a href="#"><img src="assets/images/icons/twitter.png" alt="twitter logo"></a></li>
         <li><a href="#"><img src="assets/images/icons/yelp.png" alt="yelp logo"></a></li>
       </ul>
-    </section> -->
-
-    <!-- LOGO -->
-    <section class="hero__logo">
-      <img src="assets/images/icons/logo--large.png" alt="Bon Appétit logo" class="hero__logo--hide-large">
-      <img src="assets/images/icons/logo--small.png" alt="Bon Appétit logo" class="hero__logo--hide-small">
     </section>
 
     <!-- HERO -->
@@ -162,140 +163,147 @@
     <!-- MENU -->
     <section class="menu" id="menu">
 
-      <h2 class="heading heading--menu">Discover our Menu</h2>
+      <div class="wrapper">
 
-      <div class="wrapper menu__container">
+        <h2 class="heading heading--menu">Discover our Menu</h2>
 
-        <!-- MENU COLUMN 1 -->
-        <div class="">
 
-          <h3 class="menu__type">Appetizers</h3>
 
-          <div class="menu__item">
-            <h5>Tonno</h5>
-            <p class="menu__description">Yellowfin Tuna tartare, tomato relish, olive powder, Pantelleria capers, lemon gel</p>
-            <p class="menu__price">$18.00</p>
+        <div class="menu__container">
+
+          <!-- MENU COLUMN 1 -->
+          <div>
+
+            <h3 class="menu__type">Appetizers</h3>
+
+            <div class="menu__item">
+              <h5>Tonno</h5>
+              <p class="menu__description">Yellowfin Tuna tartare, tomato relish, olive powder, Pantelleria capers, lemon gel</p>
+              <p class="menu__price">$18.00</p>
+            </div>
+
+            <div class="menu__item">
+              <h5>Salsiccia Calabrese</h5>
+              <p class="menu__description">Grilled house made spicy sausage, roasted shallot marmalade, trumpet mushrooms, charred rapini</p>
+              <p class="menu__price">$16.00</p>
+            </div>
+
+            <div class="menu__item">
+              <h5>Fritto Misto</h5>
+              <p class="menu__description">Fried baby squid, smelt, shrimp, fennel, Calabrese peppers, served with mustard sauce</p>
+              <p class="menu__price">$21.00</p>
+            </div>
+
+            <div class="menu__divider"></div>
+
+            <h3 class="menu__type">Soups</h3>
+
+            <div class="menu__item">
+              <h5>Minestrone Soup</h5>
+              <p class="menu__description">This original classic Italian soup </p>
+              <p class="menu__price">$18.00</p>
+            </div>
+
+            <div class="menu__item">
+              <h5>Soupe à l’Oignon</h5>
+              <p class="menu__description">Onion soup gratineed with swiss cheese </p>
+              <p class="menu__price">$16.00</p>
+            </div>
+
           </div>
 
-          <div class="menu__item">
-            <h5>Salsiccia Calabrese</h5>
-            <p class="menu__description">Grilled house made spicy sausage, roasted shallot marmalade, trumpet mushrooms, charred rapini</p>
-            <p class="menu__price">$16.00</p>
+          <!-- MENU COLUMN 2 -->
+          <div>
+
+            <h3 class="menu__type">Entrées</h3>
+
+            <div class="menu__item">
+              <h5>Gnocchi Pomodoro</h5>
+              <p class="menu__description">Potato dumplings, Campari tomato sauce, basil, extra virgin olive oil</p>
+              <p class="menu__price">$22.00</p>
+            </div>
+
+            <div class="menu__item">
+              <h5>Malloreddus</h5>
+              <p class="menu__description">Saffron sardinian semolina gnocchetti, wild boar ragu, fiore sardo cheese</p>
+              <p class="menu__price">$30.00</p>
+            </div>
+
+            <div class="menu__item">
+              <h5>Spaghetti Aglio E Olio</h5>
+              <p class="menu__description">Whole roasted garlic, Calabrese pepper, parmigiano Reggiano</p>
+              <p class="menu__price">$22.00</p>
+            </div>
+
+            <div class="menu__item">
+              <h5>Tortellini Di Coda</h5>
+              <p class="menu__description">Beef tortellini, butternut squash, Cipollini onion, lentil, veal jus, pecorino Toscano</p>
+              <p class="menu__price">$26.00</p>
+            </div>
+
+            <div class="menu__item">
+              <h5>Lasagna Alla Gino</h5>
+              <p class="menu__description">Bolognese sauce, Bechamel sauce, ricotta cheese and tomato sauce</p>
+              <p class="menu__price">$28.00</p>
+            </div>
+
+            <div class="menu__item">
+              <h5>Pappardelle Mimmo</h5>
+              <p class="menu__description">Long wide pasta with scallops, lobster, asparagus, butter, sage, truffle</p>
+              <p class="menu__price">$43.00</p>
+            </div>
+
           </div>
 
-          <div class="menu__item">
-            <h5>Fritto Misto</h5>
-            <p class="menu__description">Fried baby squid, smelt, shrimp, fennel, Calabrese peppers, served with mustard sauce</p>
-            <p class="menu__price">$21.00</p>
-          </div>
+          <!-- MENU COLUMN 3 -->
+          <div>
 
-          <div class="menu__divider"></div>
+            <h3 class="menu__type">Salads</h3>
 
-          <h3 class="menu__type">Soups</h3>
+            <div class="menu__item">
+              <h5>Salade Douce et Amère</h5>
+              <p class="menu__description">Field greens with prosciutto </p>
+              <p class="menu__price">$6.50</p>
+            </div>
 
-          <div class="menu__item">
-            <h5>Minestrone Soup</h5>
-            <p class="menu__description">This original classic Italian soup </p>
-            <p class="menu__price">$18.00</p>
-          </div>
+            <div class="menu__item">
+              <h5>Salade d’ Epinards</h5>
+              <p class="menu__description">Spinach and romaine garnished</p>
+              <p class="menu__price">$30.00</p>
+            </div>
 
-          <div class="menu__item">
-            <h5>Soupe à l’Oignon</h5>
-            <p class="menu__description">Onion soup gratineed with swiss cheese </p>
-            <p class="menu__price">$16.00</p>
+            <div class="menu__divider"></div>
+
+            <h3 class="menu__type">Sides</h3>
+
+            <div class="menu__item">
+              <h5>Pasta</h5>
+              <p class="menu__description">Side of pasta with a choice of Aglio e Olio or Pomodoro</p>
+              <p class="menu__price">$16.00</p>
+            </div>
+
+            <div class="menu__item">
+              <h5>Rapini</h5>
+              <p class="menu__description">Broccoli rabe, garlic </p>
+              <p class="menu__price">$12.00</p>
+            </div>
+
+            <div class="menu__item">
+              <h5>Tarassaco</h5>
+              <p class="menu__description">Sauteed dandelion greens </p>
+              <p class="menu__price">$12.00</p>
+            </div>
+
+            <div class="menu__item">
+              <h5>Polpettine</h5>
+              <p class="menu__description">House made meatballs, meat sauce, grated Parmigiano</p>
+              <p class="menu__price">$12.00</p>
+            </div>
+
           </div>
 
         </div>
 
-        <!-- MENU COLUMN 2 -->
-        <div class="">
-
-          <h3 class="menu__type">Entrées</h3>
-
-          <div class="menu__item">
-            <h5>Gnocchi Pomodoro</h5>
-            <p class="menu__description">Potato dumplings, Campari tomato sauce, basil, extra virgin olive oil</p>
-            <p class="menu__price">$22.00</p>
-          </div>
-
-          <div class="menu__item">
-            <h5>Malloreddus</h5>
-            <p class="menu__description">Saffron sardinian semolina gnocchetti, wild boar ragu, fiore sardo cheese</p>
-            <p class="menu__price">$30.00</p>
-          </div>
-
-          <div class="menu__item">
-            <h5>Spaghetti Aglio E Olio</h5>
-            <p class="menu__description">Whole roasted garlic, Calabrese pepper, parmigiano Reggiano</p>
-            <p class="menu__price">$22.00</p>
-          </div>
-
-          <div class="menu__item">
-            <h5>Tortellini Di Coda</h5>
-            <p class="menu__description">Beef tortellini, butternut squash, Cipollini onion, lentil, veal jus, pecorino Toscano</p>
-            <p class="menu__price">$26.00</p>
-          </div>
-
-          <div class="menu__item">
-            <h5>Lasagna Alla Gino</h5>
-            <p class="menu__description">Bolognese sauce, Bechamel sauce, ricotta cheese and tomato sauce</p>
-            <p class="menu__price">$28.00</p>
-          </div>
-
-          <div class="menu__item">
-            <h5>Pappardelle Mimmo</h5>
-            <p class="menu__description">Long wide pasta with scallops, lobster, asparagus, butter, sage, truffle</p>
-            <p class="menu__price">$43.00</p>
-          </div>
-
-        </div>
-
-        <!-- MENU COLUMN 3 -->
-        <div class="">
-
-          <h3 class="menu__type">Salads</h3>
-
-          <div class="menu__item">
-            <h5>Salade Douce et Amère</h5>
-            <p class="menu__description">Field greens with prosciutto </p>
-            <p class="menu__price">$6.50</p>
-          </div>
-
-          <div class="menu__item">
-            <h5>Salade d’ Epinards</h5>
-            <p class="menu__description">Spinach and romaine garnished</p>
-            <p class="menu__price">$30.00</p>
-          </div>
-
-          <div class="menu__divider"></div>
-
-          <h3 class="menu__type">Sides</h3>
-
-          <div class="menu__item">
-            <h5>Pasta</h5>
-            <p class="menu__description">Side of pasta with a choice of Aglio e Olio or Pomodoro</p>
-            <p class="menu__price">$16.00</p>
-          </div>
-
-          <div class="menu__item">
-            <h5>Rapini</h5>
-            <p class="menu__description">Broccoli rabe, garlic </p>
-            <p class="menu__price">$12.00</p>
-          </div>
-
-          <div class="menu__item">
-            <h5>Tarassaco</h5>
-            <p class="menu__description">Sauteed dandelion greens </p>
-            <p class="menu__price">$12.00</p>
-          </div>
-
-          <div class="menu__item">
-            <h5>Polpettine</h5>
-            <p class="menu__description">House made meatballs, meat sauce, grated Parmigiano</p>
-            <p class="menu__price">$12.00</p>
-          </div>
-
-        </div>
 
       </div>
 
@@ -370,14 +378,14 @@
             <div class="reservation__column reservation__column--one-t-margin">
 
               <div class="reservation__element reservation__input">
-                <input id="name" class="reservation__element--field" placeholder="Please fill in your full name" type="input" required autocomplete="off"/>
+                <input id="name" class="reservation__element--field" placeholder="Please fill in your full name" type="input" required autocomplete="off" />
                 <div class="reservation__element--bar"></div>
                 <label class="reservation__element--label" for="name">Name</label>
               </div>
 
 
               <div class="reservation__element reservation__input">
-                <input id="name" class="reservation__element--field" placeholder="" type="input" required autocomplete="off" data-provide="datepicker" data-date-start-date="+1d" data-date-orientation="bottom"/>
+                <input id="name" class="reservation__element--field" placeholder="" type="input" required autocomplete="off" data-provide="datepicker" data-date-start-date="+1d" data-date-orientation="bottom" />
                 <div class="reservation__element--bar"></div>
                 <label class="reservation__element--label" for="name">Choose a Date</label>
               </div>
@@ -388,7 +396,7 @@
             <div class="reservation__column">
 
               <div class="reservation__element reservation__input">
-                <input id="email" class="reservation__element--field" placeholder=" " type="email" required autocomplete="off"/>
+                <input id="email" class="reservation__element--field" placeholder=" " type="email" required autocomplete="off" />
                 <div class="reservation__element--bar"></div>
                 <label class="reservation__element--label" for="email">Email</label>
                 <small class="reservation__element-hint">We will never spam you!</small>
@@ -453,12 +461,9 @@
 
         </form>
 
-        <div class="reservation__btn">
-          <button type="submit" form="form1" value="Submit">Book a Table</button>
+        <div class="reservation__btn-container">
+          <button class="btn btn--reservation" type="submit" form="form1" value="Submit">Book a Table</button>
         </div>
-
-
-
 
 
     </section>
@@ -480,7 +485,17 @@
         <p><b>Email</b>: contact@bonappetit.com</p>
       </div>
 
-      <a href="#" class="footer__map">Find us on a Map</a>
+      <div class="social-media--footer">
+        <p><b>Follow Us on Social Media</b></p>
+        <ul>
+          <li><a href="#"><img src="assets/images/icons/facebook.png" alt="facebook logo"></a></li>
+          <li><a href="#"><img src="assets/images/icons/instagram.png" alt="instagram logo"></a></li>
+          <li><a href="#"><img src="assets/images/icons/twitter.png" alt="twitter logo"></a></li>
+          <li><a href="#"><img src="assets/images/icons/yelp.png" alt="yelp logo"></a></li>
+        </ul>
+      </div>
+
+      <a href="#" class="btn btn--footer">Find us on a Map</a>
 
     </div>
 

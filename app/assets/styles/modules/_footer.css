@@ -1,25 +1,20 @@
 .footer{
   text-align: center;
-  /* margin: 90px 0 0px 0; */
   margin: 50px 0 0 0;
-  border-top: 1px solid #F1F1F1;
+  border-top: 1px solid $lightGray;
 
   &__text-content{
-    margin-bottom: 90px;
+
+    @media screen and (min-width: 1082px){
+      margin-bottom: 90px;
+    }
 
     p {
-      margin: 0 0 10px 0;
+      margin: 0 0 5px 0;
       line-height: 1.6;
     }
+
   }
 
-  &__map{
-    color: #fff;
-    background-color: #f31438;
-    padding: 1.214em 3.746em;
-    border-top-left-radius: 18px;
-    border-top-right-radius: 18px;
-    line-height: 2.8;
-    font-size: .875em;
-  }
+
 }

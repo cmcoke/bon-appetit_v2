@@ -1,0 +1,28 @@
+.btn{
+  color: #fff;
+  background-color: $lightRed;
+  font-size: .875em;
+  line-height: 2.8;
+  transition:1.3s ease all;
+
+  &--reservation{
+    text-align: center;
+    padding: .1rem 1.9rem;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 11px;
+  }
+
+  &--footer{
+    padding: .2rem 1.9rem;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+
+  &:hover{
+    color: #ffffff;
+    background-color: $darkRed;
+  }
+
+
+}
