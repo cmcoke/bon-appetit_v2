@@ -1,5 +1,7 @@
 import '../styles/styles.css'
 import MobileMenu from './modules/MobileMenu'
+import 'flickity'
+import 'flickity-fade'
 
 let mobileMenu = new MobileMenu();
 
