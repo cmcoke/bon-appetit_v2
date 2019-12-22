@@ -1,0 +1,153 @@
+.form {
+  max-width: 1200px;
+  padding: 0 10px;
+  margin-top: 80px;
+
+  @media screen and (min-width: 945px) {
+    padding: 55px 90px 30px;
+    margin-top: 50px;
+  }
+
+  &__row {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 23px;
+
+    @media screen and (min-width: 945px) {
+      margin-bottom: 45px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  &__column {
+    @media screen and (min-width: 945px) {
+      width: calc((100% - 90px) / 2);
+    }
+  }
+
+  &__group {
+    position: relative;
+    margin-bottom: 45px;
+  }
+
+  & input,
+  & select {
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #E0DDDD;
+    outline: none;
+
+    @media screen and (min-width: 945px) {
+      width: 100%;
+    }
+  }
+
+  &__select--guest {
+    width: 100% !important;
+    margin-top: 12px;
+    margin-bottom: 60px;
+  }
+
+  select {
+    appearance: none;
+  }
+
+  &__date, select {
+    cursor: pointer;
+  }
+
+  & option {
+    display: list-item;
+    font-family: 'Quicksand';
+    font-size: 1em;
+    color: #4B4B4B;
+    padding: 0.5em 1em;
+    user-select: none;
+  }
+
+  &__select {
+    position: relative;
+    /* margin-bottom: 20px; */
+    /* margin-top: 10px; */
+  }
+
+  &__select:after {
+    font-family: FontAwesome;
+    content: '\f107';
+    font-size: 22px;
+    position: absolute;
+    top: 1px;
+    right: 20px;
+    color: #434B67;
+    pointer-events: none;
+    transition: transform 0.28s ease;
+  }
+
+  &__select:focus-within:after {
+    transform: rotate(180deg);
+  }
+
+  /* Label */
+  label {
+    color: #999;
+    font-size: 14px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: -20px;
+    transition: 0.2s ease all;
+  }
+
+  /* Bars */
+  &__bar {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+
+  &__bar:after,
+  &__bar:before {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: $textBlack;
+    transition: 0.2s ease all;
+  }
+
+  &__bar:before {
+    left: 50%;
+  }
+
+  &__bar:after {
+    right: 50%;
+  }
+
+  /* bar active state */
+  input:focus~&__bar:after,
+  input:focus~&__bar:before,
+  select:focus~&__bar:after,
+  select:focus~&__bar:before {
+    width: 50%;
+  }
+
+  /* error */
+  &__error {
+    color: #9f3a38;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  &__btn {
+    text-align: center;
+  }
+
+}

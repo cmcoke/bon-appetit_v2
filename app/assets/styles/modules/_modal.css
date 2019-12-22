@@ -1,0 +1,144 @@
+.modal {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-in;
+
+
+  &.is-visible {
+    visibility: visible;
+    opacity: 1;
+  }
+
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  &__side-img {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      background-color: #fff;
+      padding: 10px;
+    }
+  }
+
+  &__content {
+    background-color: #fff;
+    color: $textBlack;
+    text-align: center;
+    padding: 35px 10px;
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+      padding: 10px 10px;
+    }
+
+    @media screen and (min-width: 1119px) {
+      padding: 30px 30px;
+    }
+  }
+
+  &__show-logo {
+    margin-top: -12px;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__hide-logo {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: inline;
+    }
+  }
+
+  &__heading {
+    font-size: responsive 20px 30px;
+    margin: 0px auto 17px;
+
+    @media screen and (min-width: 1262px) {
+      width: 550px;
+    }
+
+    @media screen and (min-width: 1262px) {
+      margin-top: 10px;
+    }
+  }
+
+  &__description {
+    font-size: responsive 16px 20px;
+    margin: 0 auto 30px;
+
+    @media screen and (min-width: 964px) {
+      width: 400px;
+      margin-top: 40px;
+      margin-bottom: 50px;
+    }
+
+    @media screen and (min-width: 1119px) {
+      width: 450px;
+      margin-top: 50px;
+      margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1262px) {
+      margin-top: 50px;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__detail-container {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__detail {
+    text-transform: uppercase;
+    font-size: responsive 16px 17px;
+
+    & p {
+      font-weight: 600;
+    }
+  }
+
+  &__close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 25px;
+    transform: scaleX(1.2);
+    transform-origin: 100% 0;
+    color: $textBlack;
+    background-color: #fff;
+    border: none !important;
+    outline:none !important;
+    cursor: pointer;
+    transition: 1s ease all;
+
+    &:hover {
+      color: $lightRed;
+    }
+  }
+}

@@ -3,7 +3,9 @@
   background-color: $lightRed;
   font-size: .875em;
   line-height: 2.8;
-  transition:1.3s ease all;
+  box-shadow: none!important;
+  outline:0;
+  transition:1s ease all;
 
   &--reservation{
     text-align: center;

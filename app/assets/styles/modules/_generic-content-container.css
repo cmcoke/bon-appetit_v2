@@ -69,6 +69,7 @@
     @media screen and (min-width: 945px){
       margin: 0 auto 35px auto;
       width: 80%;
+      line-height: 1.7;
     }
 
   }

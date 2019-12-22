@@ -9,7 +9,6 @@ html, body {
 
 body {
   font-family: $mon;
-  /* background-color: $white; */
   display: flex;
   flex-direction: column;
 }

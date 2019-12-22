@@ -11,10 +11,12 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.js" charset="utf-8"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" charset="utf-8"></script>
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.standalone.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker3.standalone.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js" charset="utf-8"></script>
+
+
 
 </head>
 
@@ -388,106 +390,156 @@
 
         <p class="generic-content-container generic-content-container--reservation">Want to reserve a table at Bon Appétit? Were open daily from 8:00 AM - 11:00 PM. Call us at (212) 837-5089 or use the form below to book a table online.</p>
 
-        <form action="#" id="form1">
+        <div class="form">
 
+          <form action="#" method="#" id="form" name="form" onSubmit="return validateForm();">
 
-          <div class="reservation__container">
+            <!-- FIRST AND LAST NAME & EMAIL -->
+            <div class="form__row">
 
-            <div class="reservation__column reservation__column--one-t-margin">
-
-              <div class="reservation__element reservation__input">
-                <input id="name" class="reservation__element--field" placeholder="Please fill in your full name" type="input" required autocomplete="off" />
-                <div class="reservation__element--bar"></div>
-                <label class="reservation__element--label" for="name">Name</label>
+              <div class="form__column">
+                <div class="form__group">
+                  <input type="text" name="name" id="name" autocomplete="off">
+                  <span class="form__bar"></span>
+                  <label for="name">First and Last Name</label>
+                  <p class="form__error" id="nameError"></p>
+                </div>
               </div>
 
-
-              <div class="reservation__element reservation__input">
-                <input id="name" class="reservation__element--field" placeholder="" type="input" required autocomplete="off" data-provide="datepicker" data-date-start-date="+1d" data-date-orientation="bottom" />
-                <div class="reservation__element--bar"></div>
-                <label class="reservation__element--label" for="name">Choose a Date</label>
-              </div>
-
-
-            </div>
-
-            <div class="reservation__column">
-
-              <div class="reservation__element reservation__input">
-                <input id="email" class="reservation__element--field" placeholder=" " type="email" required autocomplete="off" />
-                <div class="reservation__element--bar"></div>
-                <label class="reservation__element--label" for="email">Email</label>
-                <small class="reservation__element-hint">We will never spam you!</small>
-              </div>
-
-              <div class="reservation__element reservation__select">
-                <select id="time" class="reservation__element--field">
-                  <option disabled selected value="" class="reservation__select-placeholder"></option>
-                  <option value="8:00 am">8:00 am</option>
-                  <option value="8:30 am">8:30 am</option>
-                  <option value="9:00 am">9:00 am</option>
-                  <option value="9:30 am">9:30 am</option>
-                  <option value="10:00 am">10:00 am</option>
-                  <option value="10:30 am">10:30 am</option>
-                  <option value="11:00 am">11:00 am</option>
-                  <option value="11:30 am">11:30 am</option>
-                  <option value="12:00 pm">12:00 pm</option>
-                  <option value="12:30 pm">12:30 pm</option>
-                  <option value="1:00 pm">1:00 pm</option>
-                  <option value="1:30 pm">1:30 pm</option>
-                  <option value="2:00 pm">2:00 pm</option>
-                  <option value="2:30 pm">2:30 pm</option>
-                  <option value="3:00 pm">3:00 pm</option>
-                  <option value="3:30 pm">3:30 pm</option>
-                  <option value="4:00 pm">4:00 pm</option>
-                  <option value="4:30 pm">4:30 pm</option>
-                  <option value="5:00 pm">5:00 pm</option>
-                  <option value="5:30 pm">5:30 pm</option>
-                  <option value="6:00 pm">6:00 pm</option>
-                  <option value="6:30 pm">6:30 pm</option>
-                  <option value="7:00 pm">7:00 pm</option>
-                  <option value="7:30 pm">7:30 pm</option>
-                  <option value="8:00 pm">8:00 pm</option>
-                  <option value="8:30 pm">8:30 pm</option>
-                  <option value="9:00 pm">9:00 pm</option>
-                  <option value="9:30 pm">9:30 pm</option>
-                  <option value="10:00 pm">10:00 pm</option>
-                  <option value="10:30 pm">10:30 pm</option>
-                  <option value="11:00 pm">11:00 pm</option>
-                </select>
-                <div class="reservation__element--bar"></div>
-                <label class="reservation__element--label" for="time">Choose a Time</label>
+              <div class="form__column">
+                <div class="form__group">
+                  <input type="email" name="email" id="email" autocomplete="off">
+                  <span class="form__bar"></span>
+                  <label for="email">Email</label>
+                  <p class="form__error" id="emailError"></p>
+                </div>
               </div>
 
             </div>
 
-          </div>
 
-          <div class="reservation__element reservation__select reservation__guest">
-            <select id="guest" class="reservation__element--field">
-              <option disabled selected value="" class="reservation__select-placeholder"></option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-            </select>
-            <div class="reservation__element--bar"></div>
-            <label class="reservation__element--label" for="guest">How Many Guest</label>
-          </div>
+            <!-- CHOOSE A DATE & SELECT A TIME -->
+            <div class="form__row">
 
-        </form>
+              <div class="form__column form__select">
+                <div class="form__group">
+                  <input type="input" name="date" id="date" class="form__date" type="input" data-provide="datepicker" data-date-start-date="+1d" data-date-orientation="bottom" autocomplete="off">
+                  <span class="form__bar"></span>
+                  <label for="date">Choose a Date</label>
+                  <p class="form__error" id="dateError"></p>
+                </div>
+              </div>
 
-        <div class="reservation__btn-container">
-          <button class="btn btn--reservation" type="submit" form="form1" value="Submit">Book a Table</button>
+              <div class="form__column form__select">
+                <div class="form__group">
+                  <select name="time" id="time" autocomplete="off">
+                    <option disabled selected value=""></option>
+                    <option value="8:00 am">8:00 am</option>
+                    <option value="8:30 am">8:30 am</option>
+                    <option value="9:00 am">9:00 am</option>
+                    <option value="9:30 am">9:30 am</option>
+                    <option value="10:00 am">10:00 am</option>
+                    <option value="10:30 am">10:30 am</option>
+                    <option value="11:00 am">11:00 am</option>
+                    <option value="11:30 am">11:30 am</option>
+                    <option value="12:00 pm">12:00 pm</option>
+                    <option value="12:30 pm">12:30 pm</option>
+                    <option value="1:00 pm">1:00 pm</option>
+                    <option value="1:30 pm">1:30 pm</option>
+                    <option value="2:00 pm">2:00 pm</option>
+                    <option value="2:30 pm">2:30 pm</option>
+                    <option value="3:00 pm">3:00 pm</option>
+                    <option value="3:30 pm">3:30 pm</option>
+                    <option value="4:00 pm">4:00 pm</option>
+                    <option value="4:30 pm">4:30 pm</option>
+                    <option value="5:00 pm">5:00 pm</option>
+                    <option value="5:30 pm">5:30 pm</option>
+                    <option value="6:00 pm">6:00 pm</option>
+                    <option value="6:30 pm">6:30 pm</option>
+                    <option value="7:00 pm">7:00 pm</option>
+                    <option value="7:30 pm">7:30 pm</option>
+                    <option value="8:00 pm">8:00 pm</option>
+                    <option value="8:30 pm">8:30 pm</option>
+                    <option value="9:00 pm">9:00 pm</option>
+                    <option value="9:30 pm">9:30 pm</option>
+                    <option value="10:00 pm">10:00 pm</option>
+                    <option value="10:30 pm">10:30 pm</option>
+                    <option value="11:00 pm">11:00 pm</option>
+                  </select>
+                  <span class="form__bar"></span>
+                  <label for="time">Select a time</label>
+                  <p class="form__error" id="timeError"></p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- HOW MANY GUEST -->
+            <div class="form__group form__select form__select--guest">
+              <select class="" name="guest" id="guest" autocomplete="off">
+                <option disabled selected value=""></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+              <span class="form__bar"></span>
+              <label for="time">How many guest will be attending?</label>
+              <p class="form__error" id="guestError"></p>
+            </div>
+
+          </form>
+
+        </div>
+
+        <div class="form__btn">
+          <button id="btn" class="btn btn--reservation" type="submit" form="form" value="" data-open="modal1">Book a Table</button>
         </div>
 
 
     </section>
 
-  </div>
+    <!-- MODAL -->
+    <section class="modal" id="modal1">
 
+      <div class="modal__container">
+
+        <div class="modal__side-img">
+          <img src="assets/images/modal--img.jpg" alt="chef preparing food">
+        </div>
+
+        <div class="modal__content">
+
+          <img src="assets/images/icons/logo--modal--small.png" alt="bon appetit logo" class="modal__logo-img modal__show-logo">
+          <img src="assets/images/icons/logo--modal--large.png" alt="bon appetit logo" class="modal__logo-img modal__hide-logo">
+
+          <h1 class="modal__heading">Hello <span id="modal__name"></span>, thank you for your reservation!</h1>
+          <p class="modal__description">Stated below are the details regarding your reservation.</p>
+
+          <div class="modal__detail-container">
+            <div class="modal__detail">
+              <p>Date</p>
+              <span id="modal__date"></span>
+            </div>
+            <div class="modal__detail">
+              <p>Time</p>
+              <span id="modal__time"></span>
+            </div>
+            <div class="modal__detail">
+              <p>Guest/</p>
+              <span id="modal__guest"></span>
+            </div>
+          </div>
+
+          <button class="modal__close-btn" data-close>X</button>
+
+        </div>
+      </div>
+
+    </section>
+
+
+  </div>
 
 
 
@@ -513,15 +565,18 @@
         </ul>
       </div>
 
-      <a href="#" class="btn btn--footer">Find us on a Map</a>
+      <a href="" class="btn btn--footer">Find us on a Map</a>
 
     </div>
 
-
-
   </footer>
 
+
+
+
+
   <script src='bundled.js'></script>
+  <script src="./assets/scripts/modules/FormSubmission.js" charset="utf-8"></script>
 </body>
 
 </html>
