@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 /* make sticky footer  -- start */
 html, body {
   height: 100%;
