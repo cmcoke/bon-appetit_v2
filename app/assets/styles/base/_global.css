@@ -54,3 +54,11 @@ select {
 select::-ms-expand {
   display: none;
 }
+
+/* prevents the modal' transition occuring on page load */
+.preload * {
+ -webkit-transition: none !important;
+ -moz-transition: none !important;
+ -ms-transition: none !important;
+ -o-transition: none !important;
+}

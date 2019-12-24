@@ -1,7 +1,9 @@
 import '../styles/styles.css'
-import MobileMenu from './modules/MobileMenu'
+import 'lazysizes'
 import 'flickity'
 import 'flickity-fade'
+import 'bootstrap-datepicker/dist/js/bootstrap-datepicker'
+import MobileMenu from './modules/MobileMenu'
 import SelectForm from './modules/SelectForm'
 
 

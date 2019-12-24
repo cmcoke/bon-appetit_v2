@@ -8,19 +8,10 @@
   <meta name="keywords" content="restaurant, dining, italian, food, meal">
   <meta name="description" content="Welcome to Bon Appétit, home of Italian food.">
   <title>Bon Appétit</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.js" charset="utf-8"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" charset="utf-8"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.standalone.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker3.standalone.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js" charset="utf-8"></script>
-
-
-
 </head>
 
-<body>
+<!-- the 'preload' class prevents css transitions from occuring on page load but is removed once the page is done loading -->
+<body class="preload">
 
   <div class="content">
 
@@ -118,7 +109,7 @@
               <div class="food-img__outer">
 
                 <article>
-                  <img width="800" height="1233" src="assets/images/food-1--800x1233.jpg" alt="Image of food" srcset="assets/images/food-1--800x1233.jpg 800w,
+                  <img class="lazyload" width="800" height="1233" data-srcset="assets/images/food-1--800x1233.jpg" alt="Image of food" data-srcset="assets/images/food-1--800x1233.jpg 800w,
                           assets/images/food-1--195x300.jpg 195w,
                           assets/images/food-1--768x1184.jpg 768w,
                           assets/images/food-1--664x1024.jpg 664w,
@@ -128,7 +119,7 @@
                 </article>
 
                 <article>
-                  <img width="800" height="916" src="assets/images/food-2--800x916.jpg" alt="Image of food" srcset="assets/images/food-2--800x916.jpg 800w,
+                  <img class="lazyload" width="800" height="916" data-srcset="assets/images/food-2--800x916.jpg" alt="Image of food" data-srcset="assets/images/food-2--800x916.jpg 800w,
                           assets/images/food-2--262x300.jpg 262w,
                           assets/images/food-2--768x879.jpg 768w,
                           assets/images/food-2--364x417.jpg 364w,
@@ -137,7 +128,7 @@
                 </article>
 
                 <article class="food-img__t-margin">
-                  <img width="800" height="1240" src="assets/images/food-3--800x1240.jpg" class="food-img__t-margin" alt="Image of food" srcset="assets/images/food-3--800x1240.jpg 800w,
+                  <img class="lazyload" width="800" height="1240" data-srcset="assets/images/food-3--800x1240.jpg" class="food-img__t-margin" alt="Image of food" data-srcset="assets/images/food-3--800x1240.jpg 800w,
                           assets/images/food-3--194x300.jpg 194w,
                           assets/images/food-3--768x1190.jpg 768w,
                           assets/images/food-3--661x1024.jpg 661w,
@@ -421,9 +412,9 @@
             <!-- CHOOSE A DATE & SELECT A TIME -->
             <div class="form__row">
 
-              <div class="form__column form__select">
+              <div class="form__column form__date">
                 <div class="form__group">
-                  <input type="input" name="date" id="date" class="form__date" type="input" data-provide="datepicker" data-date-start-date="+1d" data-date-orientation="bottom" autocomplete="off">
+                  <input type="input" name="date" id="date" class="form__arrow" type="input" data-provide="datepicker" data-date-start-date="+1d" data-date-orientation="bottom" autocomplete="off">
                   <span class="form__bar"></span>
                   <label for="date">Choose a Date</label>
                   <p class="form__error" id="dateError"></p>
@@ -505,13 +496,13 @@
       <div class="modal__container">
 
         <div class="modal__side-img">
-          <img src="assets/images/modal--img.jpg" alt="chef preparing food">
+          <img class="lazyload" data-srcset="assets/images/modal--img.jpg" alt="chef preparing food">
         </div>
 
         <div class="modal__content">
 
-          <img src="assets/images/icons/logo--modal--small.png" alt="bon appetit logo" class="modal__logo-img modal__show-logo">
-          <img src="assets/images/icons/logo--modal--large.png" alt="bon appetit logo" class="modal__logo-img modal__hide-logo">
+          <img data-srcset="assets/images/icons/logo--modal--small.png" alt="bon appetit logo" class="modal__logo-img modal__show-logo lazyload">
+          <img data-srcset="assets/images/icons/logo--modal--large.png" alt="bon appetit logo" class="modal__logo-img modal__hide-logo lazyload">
 
           <h1 class="modal__heading">Hello <span id="modal__name"></span>, thank you for your reservation!</h1>
           <p class="modal__description">Stated below are the details regarding your reservation.</p>
@@ -526,7 +517,7 @@
               <span id="modal__time"></span>
             </div>
             <div class="modal__detail">
-              <p>Guest/</p>
+              <p>Guest/s</p>
               <span id="modal__guest"></span>
             </div>
           </div>
@@ -547,7 +538,7 @@
 
     <div class="wrapper">
 
-      <img src="assets/images/icons/logo--small.png" alt="Bon Appétit logo">
+      <img class="lazyload" data-srcset="assets/images/icons/logo--small.png" alt="Bon Appétit logo">
 
       <div class="footer__text-content">
         <p>325 Bowery, Joey Ramone Place, New York, NY 10003</p>
@@ -572,11 +563,17 @@
   </footer>
 
 
-
-
+  <!-- prevents the modal' transition occuring on page load -->
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function(){
+      document.querySelector("body").classList.remove("preload")
+    })
+  </script>
 
   <script src='bundled.js'></script>
   <script src="./assets/scripts/modules/FormSubmission.js" charset="utf-8"></script>
+
+
 </body>
 
 </html>
