@@ -377,7 +377,7 @@
 
       <div class="wrapper">
 
-        <h2 class="heading heading--reservation">Make Reservation</h2>
+        <h2 class="heading heading--reservation">Make A Reservation</h2>
 
         <p class="generic-content-container generic-content-container--reservation">Want to reserve a table at Bon Appétit? Were open daily from 8:00 AM - 11:00 PM. Call us at (212) 837-5089 or use the form below to book a table online.</p>
 
@@ -538,26 +538,81 @@
 
     <div class="wrapper">
 
-      <img class="lazyload" data-srcset="assets/images/icons/logo--small.png" alt="Bon Appétit logo">
+      <div class="footer__contents">
 
-      <div class="footer__text-content">
-        <p>325 Bowery, Joey Ramone Place, New York, NY 10003</p>
-        <p><b>Telephone</b>: (212) 837-5089</p>
-        <p><b>Email</b>: contact@bonappetit.com</p>
+        <div class="footer__column--1">
+
+          <img class="lazyload" data-srcset="assets/images/icons/logo--footer.png" alt="Bon Appétit logo">
+
+          <ul>
+            <li>325 Bowery, Joey Ramone Place, New York, NY 10003</li>
+            <li>Telephone: (212) 837-5089</li>
+            <li>Email: contact@bonappetit.com</li>
+          </ul>
+
+          <div class="footer__social-media">
+            <ul>
+              <li><a href="#"><img src="assets/images/icons/facebook--footer.png" alt="facebook logo"></a></li>
+              <li><a href="#"><img src="assets/images/icons/instagram--footer.png" alt="instagram logo"></a></li>
+              <li><a href="#"><img src="assets/images/icons/twitter--footer.png" alt="twitter logo"></a></li>
+              <li><a href="#"><img src="assets/images/icons/yelp--footer.png" alt="yelp logo"></a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="footer__column--2">
+
+          <h5 class="footer__heading">Useful Links</h5>
+
+          <div class="footer__links-container">
+
+            <div class="footer__links--column-1">
+              <ul>
+                <li><a href="#">Special Offers</a></li>
+                <li><a href="#">Catering Service</a></li>
+                <li><a href="#">Hosting Special Events</a></li>
+              </ul>
+            </div>
+
+            <div class="footer__links--column-2">
+              <ul>
+                <li><a href="#">In The Press</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="footer__column--3">
+
+          <h5 class="footer__heading">Newsletter</h5>
+
+          <p>Enter your email address for our mailing list!</p>
+
+          <form action="#" method="#" name="formSubscription" id="formSubscription" onSubmit="return validateSubscription();">
+
+            <div class="form__group form__group--footer">
+              <input type="email" name="subscribe" id="subscribe" placeholder="ENTER YOUR EMAIL" autocomplete="on">
+              <span></span>
+              <p class="form__error" id="subscribeError"></p>
+            </div>
+
+            <button id="btn-subscription" class="btn btn--footer" type="submit" form="formSubscription" value="">Subscribe</button>
+
+          </form>
+
+        </div>
+
+
       </div>
 
-      <div class="social-media--footer">
-        <p><b>Follow Us on Social Media</b></p>
-        <ul>
-          <li><a href="#"><img src="assets/images/icons/facebook.png" alt="facebook logo"></a></li>
-          <li><a href="#"><img src="assets/images/icons/instagram.png" alt="instagram logo"></a></li>
-          <li><a href="#"><img src="assets/images/icons/twitter.png" alt="twitter logo"></a></li>
-          <li><a href="#"><img src="assets/images/icons/yelp.png" alt="yelp logo"></a></li>
-        </ul>
-      </div>
+    </div>
 
-      <a href="" class="btn btn--footer">Find us on a Map</a>
-
+    <div class="footer__creator">
+      <p>This site was coded by <a href="https://charlescoke.com/">C.Coke</a></p>
     </div>
 
   </footer>
@@ -565,13 +620,14 @@
 
   <!-- prevents the modal' transition occuring on page load -->
   <script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function(){
+    document.addEventListener('DOMContentLoaded', function() {
       document.querySelector("body").classList.remove("preload")
     })
   </script>
 
   <script src='bundled.js'></script>
-  <script src="./assets/scripts/modules/FormSubmission.js" charset="utf-8"></script>
+  <script src="./assets/scripts/modules/ReservationForm.js" charset="utf-8"></script>
+  <script src="./assets/scripts/modules/NewsletterForm.js" charset="utf-8"></script>
 
 
 </body>

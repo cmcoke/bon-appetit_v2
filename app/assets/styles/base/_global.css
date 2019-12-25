@@ -15,6 +15,7 @@ body {
   font-family: $mon;
   display: flex;
   flex-direction: column;
+  background-color: #fdfffc;
 }
 
 .content {
@@ -33,6 +34,8 @@ img {
 
 ul{
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 li{

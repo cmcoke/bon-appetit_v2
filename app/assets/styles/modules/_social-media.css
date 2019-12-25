@@ -8,7 +8,7 @@
   & ul{
     position: fixed;
     right: 0;
-    transform: translateX(-35%);
+    transform: translateX(-118%);
     z-index: 1;
 
     @media screen and (min-width: 1082px) and (max-width: 1130px){

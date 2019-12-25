@@ -12,18 +12,49 @@
     padding: .1rem 1.9rem;
     border: none;
     cursor: pointer;
-    margin-bottom: 11px;
+    margin-bottom: 80px;
+    margin-top: -20px;
+
+    &:hover{
+      color: #ffffff;
+      background-color: $darkRed;
+    }
+
+    @media screen and (min-width: 1024px){
+      margin-top: -30px;
+    }
+
   }
 
   &--footer{
-    padding: .2rem 1.9rem;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+    color: #ffffff;
+    background-color: #f5bd24;
+    text-align: center;
+    padding: 1px 40px;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+
+
+    &:hover{
+      color: #ffffff;
+      background-color: #ecbf29;
+    }
+
+    @media screen and (min-width: 1024px){
+      margin-top: 5px;
+    }
+
   }
 
-  &:hover{
+  &--success{
+    background-color: #0DAB0B;
     color: #ffffff;
-    background-color: $darkRed;
+
+    &:hover{
+      background-color: #0DAB0B;
+      color: #ffffff;
+    }
   }
 
 
