@@ -4,9 +4,11 @@ import 'flickity'
 import 'flickity-fade'
 import 'bootstrap-datepicker/dist/js/bootstrap-datepicker'
 import MobileMenu from './modules/MobileMenu'
+import SmoothScroll from './modules/SmoothScroll'
 
 
 let mobileMenu = new MobileMenu();
+let smoothScroll = new SmoothScroll();
 
 
 

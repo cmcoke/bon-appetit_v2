@@ -1,5 +1,5 @@
 .generic-content-container{
-  font-size: responsive 16px 30px;
+  font-size: responsive 15px 30px;
   text-align: center;
   line-height: 1.8;
   font-weight: 400;
@@ -8,7 +8,7 @@
   margin-right: auto;
 
   &--about{
-    margin-top: 20px;
+    /* margin-top: 10px; */
     margin-bottom: 35px;
 
     @media screen and (min-width: 554px){
@@ -16,7 +16,8 @@
     }
 
     @media screen and (min-width: 600px){
-      margin-top: 30px;
+      /* margin-top: 20px; */
+      margin-top: 10px;
       margin-bottom: 60px;
     }
 
@@ -32,13 +33,14 @@
 
     @media screen and (min-width: 950px){
       width: 700px;
-      margin-top: 55px;
+      margin-top: 69px;
       margin-bottom: 75px;
     }
 
     @media screen and (min-width: 1026px){
       width: 800px;
       margin-top: 70px;
+      /* margin-top: 20px; */
       margin-bottom: 45px;
     }
 
@@ -48,6 +50,7 @@
 
     @media screen and (min-width: 1201px){
       width: 900px;
+      margin-top: 120px;
       margin-bottom: 55px;
     }
 
@@ -57,8 +60,8 @@
     }
 
     @media screen and (min-width: 1388px){
-      width: 1200px;
-      margin-bottom: 35px;
+      width: 1150px;
+      margin-bottom: 50px;
     }
 
   }

@@ -1,11 +1,16 @@
 .btn{
   color: #fff;
-  background-color: $lightRed;
+  background-color: crimson;
   font-size: .875em;
   line-height: 2.8;
   box-shadow: none!important;
   outline:0;
   transition:1s ease all;
+
+  &:hover{
+    color: #ffffff;
+    background-color: $darkRed;
+  }
 
   &--reservation{
     text-align: center;
@@ -15,11 +20,6 @@
     margin-bottom: 80px;
     margin-top: -20px;
 
-    &:hover{
-      color: #ffffff;
-      background-color: $darkRed;
-    }
-
     @media screen and (min-width: 1024px){
       margin-top: -30px;
     }
@@ -27,19 +27,11 @@
   }
 
   &--footer{
-    color: #ffffff;
-    background-color: #f5bd24;
     text-align: center;
-    padding: 1px 40px;
+    padding: 1px 45px;
     border: none;
     cursor: pointer;
     margin-top: 30px;
-
-
-    &:hover{
-      color: #ffffff;
-      background-color: #ecbf29;
-    }
 
     @media screen and (min-width: 1024px){
       margin-top: 5px;

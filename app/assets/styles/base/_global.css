@@ -3,7 +3,7 @@
 }
 
 html{
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 /* make sticky footer  -- start */
@@ -15,7 +15,6 @@ body {
   font-family: $mon;
   display: flex;
   flex-direction: column;
-  background-color: #fdfffc;
 }
 
 .content {

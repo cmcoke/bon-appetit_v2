@@ -10,13 +10,14 @@
   <title>Bon Appétit</title>
 </head>
 
-<!-- the 'preload' class prevents css transitions from occuring on page load but is removed once the page is done loading -->
+<!-- the 'preload' class prevents css transitions from occuring on page load but is removed once the page is done loading  -->
+
 <body class="preload">
 
   <div class="content">
 
     <!-- HEADER -->
-    <header class="header">
+    <header class="header target">
 
       <div class="header__menu-icon">
         <div class="header__menu-icon__middle"></div>
@@ -25,11 +26,11 @@
       <div class="header__menu-content">
         <nav>
           <ul>
-            <li><a href="#home" id="home-link">Home</a></li>
-            <li><a href="#about" id="about-link">About</a></li>
-            <li><a href="#menu" id="menu-link">Menu</a></li>
-            <li><a href="#reviews" id="reviews-link">Reviews</a></li>
-            <li><a href="#reservation" id="reservation-link">Reservation</a></li>
+            <li><a href="#" id="home">Home</a></li>
+            <li><a href="#" id="about">About</a></li>
+            <li><a href="#" id="menu">Menu</a></li>
+            <li><a href="#" id="reviews">Reviews</a></li>
+            <li><a href="#" id="reservation">Reservation</a></li>
           </ul>
         </nav>
       </div>
@@ -49,11 +50,11 @@
     </section>
 
     <!-- HERO -->
-    <section class="hero" id="home">
+    <section class="hero">
 
       <div class="hero__container">
         <picture>
-          <source sizes="100vw" srcset="assets/images/hero--large.jpg 1920w, assets/images/hero--large-hi-dpi.jpg 3840w" media="(min-width: 1380px)">
+          <source sizes="100vw" srcset="assets/images/hero--large-2.jpg 1920w, assets/images/hero--large-hi-dpi-2.jpg 3840w" media="(min-width: 1380px)">
           <source sizes="1380px" srcset="assets/images/hero--medium.jpg 1380w, assets/images/hero--medium-hi-dpi.jpg 2760w" media="(min-width: 990px)">
           <source sizes="990px" srcset="assets/images/hero--small.jpg 990w, assets/images/hero--small-hi-dpi.jpg 1980w" media="(min-width: 640px)">
           <img srcset="assets/images/hero--smaller.jpg 640w, assets/images/hero--smaller-hi-dpi.jpg 1280w" alt="Customer's sitting outside restaurant">
@@ -71,17 +72,17 @@
     </section>
 
     <!-- ADDRESS, OPEN HOURS & RESERVATION NUMBER -->
-    <section class="hero__container hero__container--info">
-      <p class="">325 Bowery, Joey Ramone Place, New York, NY 10003</p>
-      <div class="hero__time-and-number">
+    <section class="restaurant-info">
+      <p>325 Bowery, Joey Ramone Place, New York, NY 10003</p>
+      <div class="restaurant-info__time-and-number">
         <p>Open Daily: 8:00 AM - 11:00 PM &nbsp;</p>
-        <p class="hero__number">(212) 837-5089</p>
+        <p class="restaurant-info__number">(212) 837-5089</p>
       </div>
     </section>
 
 
     <!-- ABOUT -->
-    <section id="about" class="about">
+    <section class="about target2">
 
       <div class="wrapper">
 
@@ -154,7 +155,7 @@
 
 
     <!-- MENU -->
-    <section class="menu" id="menu">
+    <section class="menu target3">
 
       <div class="wrapper">
 
@@ -304,7 +305,7 @@
 
 
     <!-- REVIEWS -->
-    <section class="reviews" id="reviews">
+    <section class="reviews target4">
 
       <div class="wrapper reviews__container">
 
@@ -373,7 +374,7 @@
 
 
     <!-- RESERVATION -->
-    <section class="reservation" id="reservation">
+    <section class="reservation target5">
 
       <div class="wrapper">
 
@@ -552,10 +553,10 @@
 
           <div class="footer__social-media">
             <ul>
-              <li><a href="#"><img src="assets/images/icons/facebook--footer.png" alt="facebook logo"></a></li>
-              <li><a href="#"><img src="assets/images/icons/instagram--footer.png" alt="instagram logo"></a></li>
-              <li><a href="#"><img src="assets/images/icons/twitter--footer.png" alt="twitter logo"></a></li>
-              <li><a href="#"><img src="assets/images/icons/yelp--footer.png" alt="yelp logo"></a></li>
+              <li><a href="#"><img class="lazyload" data-src="assets/images/icons/facebook--footer.png" alt="facebook logo"></a></li>
+              <li><a href="#"><img class="lazyload" data-src="assets/images/icons/instagram--footer.png" alt="instagram logo"></a></li>
+              <li><a href="#"><img class="lazyload" data-src="assets/images/icons/twitter--footer.png" alt="twitter logo"></a></li>
+              <li><a href="#"><img class="lazyload" data-src="assets/images/icons/yelp--footer.png" alt="yelp logo"></a></li>
             </ul>
           </div>
 
@@ -595,7 +596,7 @@
           <form action="#" method="#" name="formSubscription" id="formSubscription" onSubmit="return validateSubscription();">
 
             <div class="form__group form__group--footer">
-              <input type="email" name="subscribe" id="subscribe" placeholder="ENTER YOUR EMAIL" autocomplete="on">
+              <input type="email" name="subscribe" id="subscribe" placeholder="ENTER YOUR EMAIL" autocomplete="off">
               <span></span>
               <p class="form__error" id="subscribeError"></p>
             </div>
