@@ -1,6 +1,7 @@
 .footer{
   background-color: #232323;
 
+  /* footer reveal */
   @media screen and (min-width: 1024px){
     position: fixed;
     bottom: 0;
