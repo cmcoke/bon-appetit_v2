@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,600&display=swap');
 @import "normalize.css";
-@import "flickity";
-@import "bootstrap/dist/css/bootstrap";
-@import "bootstrap-datepicker/dist/css/bootstrap-datepicker3.standalone";
+@import "flickity/dist/flickity.min.css";
+@import "bootstrap-datepicker/dist/css/bootstrap-datepicker3.standalone.min.css";
 @import "base/_variables";
 @import "base/_global";
 @import "modules/_wrapper";

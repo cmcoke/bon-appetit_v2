@@ -7,7 +7,6 @@
 
   & ul{
     position: fixed;
-    /* right: 0; */
     right: -4px;
     transform: translateX(-118%);
     z-index: 1;
@@ -25,8 +24,7 @@
     }
 
     @media screen and (min-width: 1234px) and (max-width: 1379px){
-      /* top: 30%; */
-      top: 30%;
+      top: 34%;
     }
 
     @media screen and (min-width: 1380px) and (max-width: 1589px){
@@ -34,7 +32,6 @@
     }
 
     @media screen and (min-width: 1590px) and (max-width: 1655px){
-      /* top: 21%; */
       top: 25%;
     }
 
@@ -51,7 +48,7 @@
     }
 
     @media screen and (min-width: 1901px) and (max-width: 1920px){
-      top: 42%;
+      top: 38%;
       right: -1px;
     }
 

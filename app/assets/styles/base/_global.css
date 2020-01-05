@@ -2,29 +2,10 @@
   box-sizing: border-box;
 }
 
-html{
-  /* scroll-behavior: smooth; */
-}
-
-/* make sticky footer  -- start */
-html, body {
-  height: 100%;
-}
-
-body {
+body{
   font-family: $mon;
-  display: flex;
-  flex-direction: column;
+  font-size: 16px;
 }
-
-.content {
-  flex: 1 0 auto;
-}
-
-.footer {
-  flex-shrink: 0;
-}
-/* make sticky footer  -- end */
 
 img {
   max-width: 100%;
@@ -46,21 +27,25 @@ a{
 }
 
 select {
-  /* for Firefox */
-  -moz-appearance: none;
-  /* for Chrome */
   -webkit-appearance: none;
+   -moz-appearance: none;
+   -o-appearance: none;
+   appearance: none;
 }
+
 
 /* For IE10 */
 select::-ms-expand {
   display: none;
 }
 
-/* prevents the modal' transition occuring on page load */
-.preload * {
- -webkit-transition: none !important;
- -moz-transition: none !important;
- -ms-transition: none !important;
- -o-transition: none !important;
+
+/* slide out footer */
+@media screen and (min-width: 1024px){
+  .content{
+    position: relative;
+    z-index: 2;
+    background: white;
+    margin-bottom: 412px;
+  }
 }

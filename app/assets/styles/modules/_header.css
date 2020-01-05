@@ -7,7 +7,7 @@
     position: fixed;
     z-index: 4;
     top: 30px;
-    left: 12px;
+    left: 9px;
     cursor: pointer;
 
     &::before {

@@ -1,8 +1,15 @@
 .reviews{
-  margin: 10px 0 50px 0;
+  margin-top: -21px;
+  margin-bottom: 27px;
 
   @media screen and (min-width: 945px){
-    margin: 80px 0 100px;
+    margin-top: 6px;
+    margin-bottom: 28px;
+  }
+
+  @media screen and (min-width: 1298px){
+    margin-top: 20px;
+    margin-bottom: 42px;
   }
 
   &__container{

@@ -10,9 +10,7 @@
   <title>Bon Appétit</title>
 </head>
 
-<!-- the 'preload' class prevents css transitions from occuring on page load but is removed once the page is done loading  -->
-
-<body class="preload">
+<body>
 
   <div class="content">
 
@@ -94,6 +92,8 @@
           <p>Bon Appétit attracts those who don't chase luxury, but who live it-by elevating life's moments, indulging their senses, and celebrating every day with the best food, service, and surroundings in the world.</p>
         </div>
 
+      </div>
+
     </section>
 
     <!-- FOOD IMAGES -->
@@ -160,8 +160,6 @@
       <div class="wrapper">
 
         <h2 class="heading heading--menu">Discover our Menu</h2>
-
-
 
         <div class="menu__container">
 
@@ -311,8 +309,6 @@
 
         <h2 class="heading heading--reviews">What Food Critics Say About Us</h2>
 
-
-
         <div class="reviews__statements">
 
           <div class="carousel" data-flickity='{ "cellAlign": "left", "contain": true,  "prevNextButtons": false, "wrapAround": true, "pageDots": true, "autoPlay": 6000, "fade": true}'>
@@ -364,8 +360,6 @@
 
           </div>
 
-
-
         </div>
 
       </div>
@@ -384,7 +378,7 @@
 
         <div class="form">
 
-          <form action="#" method="#" id="form" name="form" onSubmit="return validateForm();">
+          <form action="#" method="#" id="form" name="form">
 
             <!-- FIRST AND LAST NAME & EMAIL -->
             <div class="form__row">
@@ -480,62 +474,24 @@
               <p class="form__error" id="guestError"></p>
             </div>
 
+            <div class="form__btn">
+              <button id="btn" class="btn btn--reservation" type="submit" form="form" value="" data-open="modal1">Book a Table</button>
+            </div>
+
           </form>
 
         </div>
 
-        <div class="form__btn">
-          <button id="btn" class="btn btn--reservation" type="submit" form="form" value="" data-open="modal1">Book a Table</button>
-        </div>
 
 
-    </section>
-
-    <!-- MODAL -->
-    <section class="modal" id="modal1">
-
-      <div class="modal__container">
-
-        <div class="modal__side-img">
-          <img class="lazyload" data-srcset="assets/images/modal--img.jpg" alt="chef preparing food">
-        </div>
-
-        <div class="modal__content">
-
-          <img data-srcset="assets/images/icons/logo--modal--small.png" alt="bon appetit logo" class="modal__logo-img modal__show-logo lazyload">
-          <img data-srcset="assets/images/icons/logo--modal--large.png" alt="bon appetit logo" class="modal__logo-img modal__hide-logo lazyload">
-
-          <h1 class="modal__heading">Hello <span id="modal__name"></span>, thank you for your reservation!</h1>
-          <p class="modal__description">Stated below are the details regarding your reservation.</p>
-
-          <div class="modal__detail-container">
-            <div class="modal__detail">
-              <p>Date</p>
-              <span id="modal__date"></span>
-            </div>
-            <div class="modal__detail">
-              <p>Time</p>
-              <span id="modal__time"></span>
-            </div>
-            <div class="modal__detail">
-              <p>Guest/s</p>
-              <span id="modal__guest"></span>
-            </div>
-          </div>
-
-          <button class="modal__close-btn" data-close>X</button>
-
-        </div>
       </div>
-
     </section>
-
 
   </div>
 
 
 
-  <footer class="footer">
+  <footer class="footer slide">
 
     <div class="wrapper">
 
@@ -593,7 +549,11 @@
 
           <p>Enter your email address for our mailing list!</p>
 
-          <form action="#" method="#" name="formSubscription" id="formSubscription" onSubmit="return validateSubscription();">
+          <div class="test">
+
+          </div>
+
+          <form action="#" method="#" name="formSubscription" id="formSubscription">
 
             <div class="form__group form__group--footer">
               <input type="email" name="subscribe" id="subscribe" placeholder="ENTER YOUR EMAIL" autocomplete="off">
@@ -617,18 +577,6 @@
     </div>
 
   </footer>
-
-
-  <!-- prevents the modal' transition occuring on page load -->
-  <script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function() {
-      document.querySelector("body").classList.remove("preload")
-    })
-  </script>
-
-  <script src='bundled.js'></script>
-  <script src="./assets/scripts/modules/ReservationForm.js" charset="utf-8"></script>
-  <script src="./assets/scripts/modules/NewsletterForm.js" charset="utf-8"></script>
 
 
 </body>

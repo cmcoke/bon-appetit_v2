@@ -1,25 +1,21 @@
 .modal {
-
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
   bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 5;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  background: rgba(0, 0, 0, 0.8);
-  visibility: hidden;
   opacity: 0;
-  transition: all 0.35s ease-in;
+  visibility: hidden;
+  transition: all .3s ease-out;
 
-
-  &.is-visible {
-    visibility: visible;
+  &--is-visible{
     opacity: 1;
+    visibility: visible;
   }
-
 
   &__container {
     display: flex;
@@ -30,7 +26,7 @@
     }
   }
 
-  &__side-img {
+  &__img {
     display: none;
 
     @media screen and (min-width: 768px) {
@@ -52,7 +48,7 @@
     }
 
     @media screen and (min-width: 1119px) {
-      padding: 30px 30px;
+      padding: 40px 50px;
     }
   }
 
@@ -73,7 +69,8 @@
   }
 
   &__heading {
-    font-size: responsive 20px 30px;
+    font-size: responsive 20px 34px;
+    font-weight: 400;
     margin: 0px auto 17px;
 
     @media screen and (min-width: 1262px) {
@@ -86,7 +83,7 @@
   }
 
   &__description {
-    font-size: responsive 16px 20px;
+    font-size: responsive 16px 21px;
     margin: 0 auto 30px;
 
     @media screen and (min-width: 964px) {
@@ -123,22 +120,20 @@
     }
   }
 
-  &__close-btn {
+  &__close {
     position: absolute;
     top: 15px;
     right: 15px;
-    font-size: 25px;
+    font-size: 2rem;
     transform: scaleX(1.2);
     transform-origin: 100% 0;
-    color: $textBlack;
-    background-color: #fff;
-    border: none !important;
-    outline:none !important;
     cursor: pointer;
+    color: $textBlack;
     transition: 1s ease all;
 
-    &:hover {
+    &:hover{
       color: $lightRed;
     }
   }
+
 }
