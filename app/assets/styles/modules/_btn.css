@@ -33,13 +33,7 @@
     border: none;
     cursor: pointer;
     margin-top: 30px;
-    background-color: #E6B209;
-
-
-    &:hover{
-      background-color:#CE9F09;
-    }
-
+    
     @media screen and (min-width: 1024px){
       margin-top: 5px;
     }
