@@ -82,6 +82,10 @@
     left: 9px;
     cursor: pointer;
 
+    @media screen and (min-width: 1920px){
+      top: 52px;
+    }
+
     &::before {
       content: "";
       position: absolute;
