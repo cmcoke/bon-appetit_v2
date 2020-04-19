@@ -3,6 +3,35 @@
   font-size: responsive 30px 45px;
   font-weight: 400;
 
+  &--small{
+    font-family: $script;
+    color: #ffffff;
+    font-size: responsive 30px 90px;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  &--large{
+    text-transform: uppercase;
+    color: $yellow;
+    font-size: responsive 40px 150px;
+    font-weight: 400;
+    margin: 0;
+
+    @media screen and (min-width: 640px) {
+      margin-top: -2px;
+    }
+
+    @media screen and (min-width: 1000px) {
+      margin-top: -15px;
+    }
+
+    @media screen and (min-width: 1383px) {
+      margin-top: -20px;
+    }
+    
+  }
+
   &--menu{
     margin-top: 28px;
     margin-bottom: 25px;
